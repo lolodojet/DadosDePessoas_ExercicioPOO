@@ -52,23 +52,15 @@ public class Pessoa {
     // Leitura dos dados informados acima (Pai)
 
     public void Cadastro(){
-        System.out.println("Fazendo cadastro..");
+        System.out.println("Iniciando cadastro...");
     }
 
     public void Confirmando(){
-        System.out.println("Confirmando seu cadastro!");
+        System.out.println("Confirmando seu cadastro...");
     }
 
-    public void lerIdade(){
-        System.out.println("Anotando sua idade... ");
-    }
-
-    public void lerAltura(){
-        System.out.println("Anotando sua altura... ");
-    }
-
-    public void lerPeso(){
-        System.out.println("Anotando seu peso... ");
+    public void ExibirInformacao(){
+        System.out.println("Exbindo informaçoes.... Espera de matrícula - Nome:  " +nome+", Nacionalidade: "+nacionalidade+", Idade: "+idade+", Altura: "+altura+", Peso: "+peso);
     }
 
 }

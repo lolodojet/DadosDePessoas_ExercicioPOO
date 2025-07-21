@@ -28,4 +28,19 @@ public class Aluno extends Pessoa{
     public void setNota(double nota){
         this.nota = nota;
     }
+
+    public void verFaixa(){
+        System.out.println("Verificando sua faixa...");
+    }
+    public void receberFaixa(){
+        System.out.println("Recebendo faixa nova...");
+    }
+    public void participarCampeonato(){
+        System.out.println("Você foi selecionado para lutar!");
+    }
+
+    @Override
+    public void ExibirInformacao(){
+        System.out.println("Exbindo informaçoes do Aluno... Curso que deseja: "+cursoDesejado+", Ano de Matricula: " +anoDeMatricula+", Nota: "+nota);
+    }
 }

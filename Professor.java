@@ -2,6 +2,7 @@ public class Professor extends Pessoa {
     private String escolaFormante;
     private String cursoProfessor;
     private int tempoDeContrato;
+    private double salario;
     
     /* Método construtor Professor(){}*/
 
@@ -29,7 +30,26 @@ public class Professor extends Pessoa {
         this.tempoDeContrato = tempoDeContrato;
     }
 
-    public void lerEscolaFormante(){
-        System.out.println(cursoProfessor);
+    // Salario professor
+    public double getSalario(){
+        return salario;
+    }
+    public void setSalario(double salario){
+        this.salario = salario;
+    }
+
+
+    public void iniciandoTreino(){
+        System.out.println("Começando treino...");
+    }
+    public void avaliandoAlunos(){
+        System.out.println("Avaliando alunos...");
+    }
+    public void lancarNotas(){
+        System.out.println("Lançando notas...");
+    }
+    @Override
+    public void ExibirInformacao(){
+        System.out.println("Exbindo informaçoes do Professor... Escola formante: "+escolaFormante+", Especialidade: " +cursoProfessor+", Tempo de contrato: "+tempoDeContrato+ "anos, Salário: "+salario);
     }
 }
